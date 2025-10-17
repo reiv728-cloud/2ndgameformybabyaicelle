@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Love: Our Story - For Baby 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ultimate_romantic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor Sparkle Trail -->
+    <canvas id="sparkleCanvas"></canvas>
+    
+    <!-- Floating Background Particles -->
+    <div class="particles-container" id="particlesContainer"></div>
+    
+    <!-- Achievement Notification -->
+    <div class="achievement-notification" id="achievementNotification">
+        <div class="achievement-icon">✦</div>
+        <div class="achievement-content">
+            <div class="achievement-title" id="achievementTitle"></div>
+            <div class="achievement-desc" id="achievementDesc"></div>
+        </div>
+    </div>
+    
+    <!-- Main Game Container -->
+    <div class="game-container" id="gameContainer">
+        
+        <!-- Start Screen -->
+        <div class="screen active" id="startScreen">
+            <div class="title-container">
+                <h1 class="main-title">Truth or Love</h1>
+                <h2 class="subtitle">Our Story</h2>
+                <p class="dedication">Para sa aking Baby ♥</p>
+            </div>
+            <button class="btn-primary" id="startBtn">Begin Your Journey</button>
+        </div>
+        
+        <!-- Game Scene Screen -->
+        <div class="screen" id="gameScreen">
+            <div class="scene-container" id="sceneContainer">
+                <!-- Scene Background -->
+                <div class="scene-background" id="sceneBackground"></div>
+                
+                <!-- Scene Content -->
+                <div class="scene-content">
+                    <div class="scene-number" id="sceneNumber">Scene 1</div>
+                    <h2 class="scene-title" id="sceneTitle">The Rainy Night</h2>
+                    <div class="scene-text" id="sceneText"></div>
+                    
+                    <!-- Choices Container -->
+                    <div class="choices-container" id="choicesContainer"></div>
+                    
+                    <!-- Mini-game Container -->
+                    <div class="minigame-container" id="minigameContainer"></div>
+                </div>
+                
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hidden Ending Screen -->
+        <div class="screen" id="endingScreen">
+            <div class="ending-container">
+                <div class="ending-sparkles"></div>
+                <h1 class="ending-title" id="endingTitle">Our Forever Story</h1>
+                <div class="ending-badge" id="endingBadge">♥</div>
+                <div class="ending-text" id="endingText"></div>
+                <div class="ending-message">
+                    <p id="endingMessage1">You chose love in every moment, Baby.</p>
+                    <p id="endingMessage2">This is just the beginning of our forever.</p>
+                    <p class="signature">- For Baby, always ♥</p>
+                </div>
+                
+                <!-- Promise Tokens -->
+                <div class="promise-tokens" id="promiseTokens" style="display:none;">
+                    <h3>My Promises to You ♥</h3>
+                    <div class="token-list" id="tokenList"></div>
+                </div>
+                
+                <!-- Memories Counter -->
+                <div class="memories-counter" id="memoriesCounter" style="display:none;">
+                    <h3>Our Story in Numbers ✦</h3>
+                    <div class="memory-stats" id="memoryStats"></div>
+                </div>
+                
+                <!-- Secret Love Letter -->
+                <div class="secret-letter" id="secretLetter" style="display:none;">
+                    <h3>A Letter For You ♛</h3>
+                    <div class="letter-content" id="letterContent"></div>
+                </div>
+                
+                <!-- Fortune Cookie -->
+                <div class="fortune-cookie" id="fortuneCookie">
+                    <div class="fortune-text" id="fortuneText"></div>
+                </div>
+                
+                <!-- Achievement Summary -->
+                <div class="achievement-summary" id="achievementSummary">
+                    <h3>Moments Captured ✦</h3>
+                    <div class="achievement-list" id="achievementList"></div>
+                </div>
+                
+                <!-- Ultimate Message (Hidden Easter Egg) -->
+                <div class="ultimate-message" id="ultimateMessage" style="display:none;">
+                    <div class="ultimate-content" id="ultimateContent"></div>
+                </div>
+                
+                <!-- Hidden Music Controls -->
+                <div class="music-controls hidden" id="musicControls">
+                    <button class="music-btn" id="musicToggle" title="Toggle Music">♫</button>
+                    <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="30" title="Volume">
+                </div>
+                
+                <div class="ending-buttons">
+                    <button class="btn-primary" id="replayBtn">Relive Our Story</button>
+                    <button class="btn-secret" id="secretBtn" style="display:none;">Read My Heart ♥</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Audio Elements -->
+    <audio id="bgMusic" loop>
+        <source src="THANK YOU 4 LOVIN' ME (Lyric Video).mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sfxHeartbeat" src="sounds/heartbeat.mp3"></audio>
+    <audio id="sfxKiss" src="sounds/kiss.mp3"></audio>
+    <audio id="sfxChime" src="sounds/chime.mp3"></audio>
+    <audio id="sfxRain" loop src="sounds/rain.mp3"></audio>
+    <audio id="sfxGiggle" src="sounds/giggle.mp3"></audio>
+    
+    <script src="script.js"></script>
+    <script src="ultimate_romantic.js"></script>
+</body>
+</html>
